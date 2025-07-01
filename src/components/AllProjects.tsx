@@ -8,7 +8,7 @@ export const AllProjects = ()=>{
 
     ]
 
-    return <div className="pl-8 sm:pl-20 sm:pr-5 py-10 lg:px-40 xl:px-60 2xl:px-80">
+    return <div className="pl-8 pr-2 sm:pl-20 sm:pr-5 py-10 lg:px-40 xl:px-60 2xl:px-80">
         <div className="">
             <h3 className="text-blue-500 text-3xl font-bold border-b pb-1">Projects</h3>
             <p className="mt-2 text-white/40 ">A curated collection of my development work — from responsive front-end interfaces and full-stack web apps to collaborative and personal projects that showcase my problem-solving and technical capabilities.</p>
@@ -22,8 +22,8 @@ export const AllProjects = ()=>{
                     <span className="text-xl font-bold">{data.title}</span>
                     {data.status === "Live" ? <span className={`bg-slate-800 text-[#49A1FC] rounded-lg w-14  text-sm font-semibold text-center`}>{data.status}</span> : ""}
                 </div>
-                <div className="mx-5 mt-3 text-white">{data.description}</div>
-                <div className="flex justify-between mt-8 mb-6 ml-6 mr-14 md:grid md:grid-cols-3 md:gap-4 lg:mr-36">
+                <div className="mx-5 my-5 text-white">{data.description}</div>
+                <div className="flex gap-1 mt-6 mb-6 ml-6 mr-2 md:grid md:grid-cols-3 md:gap-4 lg:mr-36">
                     {data.stack.map((info)=>(
                     <span className="w-max bg-[#242424] text-[12px] text-white font-semibold rounded-lg p-1">{info}</span>
                     ))}
