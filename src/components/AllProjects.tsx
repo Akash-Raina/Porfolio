@@ -23,7 +23,7 @@ export const AllProjects = ()=>{
                     {data.status === "Live" ? <span className={`bg-slate-800 text-[#49A1FC] rounded-lg w-14  text-sm font-semibold text-center`}>{data.status}</span> : ""}
                 </div>
                 <div className="mx-5 my-5 text-white">{data.description}</div>
-                <div className="h-[62px] flex flex-wrap gap-2 mt-6 mb-6 ml-6 md:grid md:grid-cols-3 md:gap-4 md:mr-36">
+                <div className="h-[62px] flex flex-wrap gap-2 mt-6 mb-6 ml-6  md:mr-3 lg:mr-10">
                     {data.stack.map((info)=>(
                     <span className="w-max h-max bg-[#242424] text-[13px] text-white font-semibold rounded-lg p-1">{info}</span>
                     ))}
